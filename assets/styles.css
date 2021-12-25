@@ -1,0 +1,315 @@
+/* untuk mengimport font-family dari google yaitu quicksand dan righteous*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Righteous&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #F9A826;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav .order {
+    background-color: #F9A826;
+    font-size: 15px;
+    padding: 13px 40px;
+    border-radius: 20px;
+}
+
+nav .now {
+    color: white;
+}
+
+.jumbotron {
+    display: flex;
+    width: 90%;
+    overflow: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+
+.jumbotron-isi {
+    display: flex;
+    flex-basis: 50%;
+    margin: 5px;
+}
+
+.jumbotron img {
+    width: 100%;
+}
+
+.judul {
+    flex-direction: column;
+}
+
+.jumbotron-isi h1 {
+    color: #F9A826;
+    font-family: 'Righteous', cursive;
+    font-size: 4.5em;
+    margin-top: 35%;
+    text-align: right;
+}
+
+.jumbotron-isi p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    text-align: right;
+    margin-top: -35px;
+    color: #3F3D56;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    background-color: #3F3D56;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2:hover {
+    text-shadow: 2px 2px 8px black
+}
+
+.flex-container-row {
+    display: flex;
+    flex-grow: 1;
+
+    padding: 20px;
+}
+
+.card {
+    flex-basis: 25%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 5px;
+    overflow: auto;
+
+}
+
+.card p {
+    font-size: 10px;
+}
+
+.pict {
+    /* menunjuk class yg benrama .featured-image*/
+    width: 100%;
+    /* mengatur lebarnya menjadi 100%  */
+    max-height: 350px;
+    /* mengatur ukuran tinggi maksimal 300px */
+    object-fit: cover;
+    /* mengatur besar kecil gambar agar tetap sesuai cover yg sudah di atur*/
+    object-position: center;
+    /* mengatur agar gambar berada ditengah*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bagian1:hover {
+    flex-basis: 40%;
+    box-shadow: 0 20px 20px 0 black;
+
+    font-size: 20px;
+}
+
+.bagian2:hover {
+    flex-basis: 40%;
+    box-shadow: 0 20px 20px 0 black;
+
+    font-size: 20px;
+}
+
+.bagian3:hover {
+    flex-basis: 40%;
+    box-shadow: 0 20px 20px 0 black;
+
+    font-size: 20px;
+}
+
+.bagian4:hover {
+    flex-basis: 40%;
+    box-shadow: 0 20px 20px 0 black;
+
+    font-size: 20px;
+}
+
+.profile header {
+    /* menunjuk tag header yg ada di dalam class profile*/
+    text-align: center;
+    /* merubah teksnya menjadi rata tengah*/
+}
+
+.profile {
+    color: white;
+    background-color: #3F3D56;
+    padding-top: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+section {
+    padding-top: 30px;
+    text-align: center;
+}
+
+section table {
+    width: 25%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+footer {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-color: #F9A826;
+    text-align: center;
+    padding: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    padding: 20px;
+}
+
+.flex-footer img {
+    height: 30px;
+    margin: auto;
+}
+
+footer p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* untuk membuat website menjadi responsive pada 
+   ukuran lebar layar miximal 513px*/
+@media screen and (max-width:513px) {
+    nav {
+        padding: 2px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    nav .order {
+        padding: 4px 10px;
+    }
+
+    nav ul li {
+        margin-right: 11px;
+    }
+
+    .jumbotron {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .jumbotron-isi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .judul {
+        width: 100%;
+    }
+
+    .jumbotron-isi h1 {
+        text-align: center;
+        font-size: 4em;
+        margin-top: 0;
+    }
+
+    .jumbotron-isi p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .flex-container-row {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 50px;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section table {
+        width: 60%;
+        font-size: 10px;
+    }
+
+
+    .flex-footer img {
+        height: 15px;
+        margin: auto;
+    }
+}
